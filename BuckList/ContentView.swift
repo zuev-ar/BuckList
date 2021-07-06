@@ -8,22 +8,42 @@
 import SwiftUI
 import CoreData
 
+struct LoadingView: View {
+    var body: some View {
+        Text("Loading...")
+    }
+}
+
+struct SuccessView: View {
+    var body: some View {
+        Text("Success!")
+    }
+}
+
+struct FaildView: View {
+    var body: some View {
+        Text("Faild!")
+    }
+}
+
 struct ContentView: View {
     
+    enum LoadingState {
+        case loading, success, faild
+    }
+    
+    var loadingState = LoadingState.faild
+    
     var body: some View {
-        Text("Hello world")
-            .onTapGesture {
-                let str = "Test Message"
-                let url = self.getDocumentsDirectory().appendingPathComponent("message.txt")
-                
-                do {
-                    try str.write(to: url, atomically: true, encoding: .utf8)
-                    let input = try String(contentsOf: url)
-                    print(input)
-                } catch {
-                    print(error.localizedDescription)
-                }
+        Group {
+            if loadingState == .loading {
+                LoadingView()
+            } else if loadingState == .success {
+                SuccessView()
+            } else if loadingState == .faild {
+                FaildView()
             }
+        }
     }
     
     func getDocumentsDirectory() -> URL {
