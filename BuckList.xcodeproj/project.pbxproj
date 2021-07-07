@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D7D594C42695E893008BB0E8 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D594C32695E893008BB0E8 /* MapView.swift */; };
 		D7DD14B32694D04300540387 /* BuckListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DD14B22694D04300540387 /* BuckListApp.swift */; };
 		D7DD14B52694D04300540387 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DD14B42694D04300540387 /* ContentView.swift */; };
 		D7DD14B72694D04500540387 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7DD14B62694D04500540387 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D7D594C32695E893008BB0E8 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		D7DD14AF2694D04300540387 /* BuckList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuckList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7DD14B22694D04300540387 /* BuckListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuckListApp.swift; sourceTree = "<group>"; };
 		D7DD14B42694D04300540387 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				D7DD14B22694D04300540387 /* BuckListApp.swift */,
+				D7D594C32695E893008BB0E8 /* MapView.swift */,
 				D7DD14B42694D04300540387 /* ContentView.swift */,
 				D7DD14B62694D04500540387 /* Assets.xcassets */,
 				D7DD14BB2694D04500540387 /* Persistence.swift */,
@@ -146,6 +149,7 @@
 			files = (
 				D7DD14BC2694D04500540387 /* Persistence.swift in Sources */,
 				D7DD14B52694D04300540387 /* ContentView.swift in Sources */,
+				D7D594C42695E893008BB0E8 /* MapView.swift in Sources */,
 				D7DD14BF2694D04500540387 /* BuckList.xcdatamodeld in Sources */,
 				D7DD14B32694D04300540387 /* BuckListApp.swift in Sources */,
 			);
