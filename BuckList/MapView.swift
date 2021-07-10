@@ -2,7 +2,7 @@
 //  MapView.swift
 //  BuckList
 //
-//  Created by Arkasha Zuev on 07.07.2021.
+//  Created by Arkasha Zuev on 08.07.2021.
 //
 
 import MapKit
