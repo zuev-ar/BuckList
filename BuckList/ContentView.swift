@@ -98,11 +98,6 @@ struct ContentView: View {
                 UnlockButtonView(delegate: self)
             }
         }
-//        .alert(isPresented: $showingPlaceDetails) {
-//            Alert(title: Text(selectedPlace?.title ?? "Unknown"), message: Text(selectedPlace?.subtitle ?? "Missing place information"), primaryButton: .default(Text("OK")), secondaryButton: .default(Text("Edit")) {
-//                self.showingEditScreen = true
-//            })
-//        }
         .alert(item: $showingAlert) { detail in
             if detail.name == "AuthenticationError" {
                 return Alert(title: Text("Error"), message: Text("Authentication error"), dismissButton: .default(Text("OK")))
